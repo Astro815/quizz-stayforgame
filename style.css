@@ -1,0 +1,100 @@
+*{
+    font-family: monospace;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./bg.jpg);
+    background-size: 100vw;
+    background-position: center;
+}
+
+h1{
+    margin: 0px;
+    font-size: 12pt;
+}
+
+body,#perguntas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invisivel{
+    display: none;
+}
+
+.visivel {
+    display: flex;
+    width: min-content;
+    height: auto;
+    padding: 2em 3em;
+    background-color: #0009;
+    backdrop-filter: blur(8px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid#fff9;
+    border-radius: 1em;
+    color: white;
+    min-width: 35em;
+}
+
+.visivel img{
+    height: 45vh;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+p{
+    font-size: 16pt;
+    margin: 0.1em 0em 1em;
+    text-align: center;
+}
+
+#perguntas > div > div{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3{
+    text-align: center;
+    margin: 0.25em;
+}
+
+input{
+    display: none;
+}
+
+#btn{
+    color: black;
+    width: 12em;
+    height: 3em;
+    background: #ccc;
+    font-weight: bold;
+    border-radius: 1em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+#btn:active{
+    background-color: white;
+}
+
+/* CREDITs */
+p#credit{
+    position: fixed;
+    bottom: 0px;
+    font-size: 10pt;
+}

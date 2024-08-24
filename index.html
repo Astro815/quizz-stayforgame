@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz da StayForGame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="perguntas">
+        <div id="0" class="visivel">
+            <img src="./imagens/capa.png">
+            <h1>Quizz</h1>
+            <p>Este é um Quizz sobre a <i>StayForGame</i>, mas respostas possiveis serão Verdadeiro ou Falso.</p>
+            <button id="btn" onclick="next_question()">Vamos começar!</button>
+        </div>
+        <div id="1" class="invisivel">
+            <img src="./imagens/p1.png">
+            <h1>Pergunta #1</h1>
+            <p>O jogo <i>Knuper</i> foi o primeiro jogo lançado oficialmente pela <i>StayForgame</i>.</p>
+            <div>
+                <label id="btn" for="p1r1">Verdadeiro</label>
+                <label id="btn" for="p1r2">Falso</label>
+                <input type="button" id="p1r1" class="r1" value="true">
+                <input type="button" id="p1r2" class="r1" value="false">
+            </div>
+        </div>
+        <div id="2"  class="invisivel">
+            <img src="./imagens/p2.jpeg">
+            <h1>Pergunta #2</h1>
+            <p>A logo da <i>StayForGame</i> é um gancho invertido.</p>
+            <div>
+                <label id="btn" for="p2r1">Verdadeiro</label>
+                <label id="btn" for="p2r2">Falso</label>
+                <input type="button" id="p2r1" class="r2" value="true">
+                <input type="button" id="p2r2" class="r2" value="false">
+            </div>
+        </div>
+        <div id="3"  class="invisivel">
+            <img src="./imagens/p3.jpeg">
+            <h1>Pergunta #3</h1>
+            <p>A <i>StayForGame</i> possui um jogo chamado <i>BrosLand</i>, e planeja lançado oficialmente em 2025?</p>
+            <div>
+                <label id="btn" for="p3r1">Verdadeiro</label>
+                <label id="btn" for="p3r2">Falso</label>
+                <input type="button" id="p3r1" class="r3" value="true">
+                <input type="button" id="p3r2" class="r3" value="false">
+            </div>
+        </div>
+        <div id="4" class="invisivel">
+            <img src="./imagens/p4.png">
+            <h1>Pergunta #4</h1>
+            <p>"Nas primeiras versões de <i>Knuper</i>, o jogo seria de ritmo musical onde os jogadores precisavam saltar no ritmo das músicas.</p>
+            <div>
+                <label id="btn" for="p4r1">Verdadeiro</label>
+                <label id="btn" for="p4r2">Falso</label>
+                <input type="button" id="p4r1" class="r4" value="true">
+                <input type="button" id="p4r2" class="r4" value="false">
+            </div>
+        </div>
+        <div id="5" class="invisivel">
+            <img src="./imagens/p5.jpg">
+            <h1>Pergunta #5</h1>
+            <p>Na versão 1.12.1 do PypeDolls foi adicionado os inimigos chamados Rodon.</p>
+            <div>
+                <label id="btn" for="p5r1">Verdadeiro</label>
+                <label id="btn" for="p5r2">Falso</label>
+                <input type="button" id="p5r1" class="r5" value="true">
+                <input type="button" id="p5r2" class="r5" value="false">
+            </div>
+        </div>
+        <div id="resultado" class="invisivel">
+            <h1>Resultado</h1>
+            <p>Você completou o quizz sobre Doramas, veja a sua pontuação abaixo:</p>
+            <h3 id="respostas_corretas">Respostas Corretas: <br></h3>
+            <h3 id="respostas_incorretas">Respostas Incorretas: <br></h3>
+            <br>
+            <button id="btn" onclick="navigation.reload();">Tentar de novo</button>
+        </div>
+    </div>
+    <p id="credit">Quizz por <i>StayForGame&#174;</i> - 2024</p>
+</body>
+<script src="script.js"></script>
+</html>
